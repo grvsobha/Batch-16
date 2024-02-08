@@ -1,0 +1,70 @@
+Scrum Calls/Daily standup call/ Daily scrum call/meeting
+======================================================
+3 Imp points
+
+1. what you did yesterday
+2. what you are going to do today
+3. are there any impedements
+
+Sprint
+=========
+1. Agile methodology - Jira dash board
+2.SNow(Service Now)
+3. IBM -CLM - 
+4. Kanabn board
+5. ITIL Process
+
+2 weeks - 
+1 monthy once
+1. task   - Scrum master
+============
+user story point 
+===========
+ Jenkins - Master/slave - 2 - 2days -16hrs
+2 spints will complete
+=================
+sprint review - 
+sprint podium - 
+
+Interview Preparation:
+==================
+
+Techincal Skills
+=================
+1. i am currently working with OS called Linux
+DevOps
+==========
+1. Version control working with Git, Github & Gitlab
+2. build tool working with maven
+3. CI & CD implementation jenkins,
+4. Containerzation tool working Docker
+5. Container orchestratataion tool - K8S
+6. configuration managemnet tool working Ansible
+
+Cloud
+----------
+AWS
+1. EC2
+2. VPC
+3. S3
+4. EBS
+5. CW
+6. SNS
+7. IAM
+8. RDS
+9. EIP
+
+IaaC Tool - Terraform
+
+Scripting - Shell
+
+Project
+==========
+1. Telecome project
+2. E-commerce - 
+3. pharma project
+4. Banking
+5. Insurance
+6. Retail
+
+
