@@ -1,0 +1,467 @@
+EC2 Instances:
+=================
+1. ec2-instance UI
+2. EC2-Instance - CLI (Command Line interface) - (AWS CLI, Access key, secretkey, region)
+3. Terraform - EC2 Instance
+
+Load Balancer:
+===============
+
+10 server - EC2 
+Amazon site
+4th & 5th server is stopped - unhealth condition
+8 server - 
+7th server - unhealth - monitoring tool - 7th server
+
+2 EC2 Instances:
+==================
+1 server
+
+security group- same
+web servers
+html code 
+
+2 server - Boostrap services
+
+Load Balancer:
+===============
+
+types of load balancer:
+=================
+4 types of loadbalnacer(lb)
+
+7 steps process
+
+DNS 
+==========
+Domain Name specific
+MYLB-1556887411.us-east-1.elb.amazonaws.com
+
+one server down, health target ec2 instances 
+healtht ec2 instance 
+
+Million users
+===========
+auto scalling
+min -4
+
+max ec2 - 50 - 50 ec2 created automactiily - 50  
+100 musers - 48 ecc2
+50 musers - 25 ec2
+
+min 2
+max - 3
+
+Auto scalling:
+====================
+pre-req - load balancer
+
+
+2 ec2 instance created automatically
+i shuld get email trigger
+
+SNS:
+===========
+Simple notifcation Service
+
+E-Mail notification
+
+Subsricption
+ email id
+ 
+
+EC2 :
+==========
+CPU issue
+memory
+
+Monitoring Tool:
+===================
+CloudWatch is monitoring tool for AWS Service
+memory full
+
+alarts/ alarms
+
+2 types:
+=========
+1. system logs - cpu, memory , n/w issue, system statuc check - 5 Mnts - EC2, LB
+2. application logs - db server - HTTPS_400_Error (4XX) - 1 mnts, 3 mnts or 5 mnts - 30sec
+                                - HTTPS_500_Error (5XX)
+
+CPUUtilization:
+=================
+1 >= 70 % - email alert
+2. <= 30 % email alert
+
+
+EBS Snapshot:
+=============
+Backup & Restore
+
+Docker-Compose- Backend - Production
+2 years
+stopped
+
+i have sent E-Mail,
+
+CLoud spcialist
+- 3 weeks
+
+They raised ticket from AWS Support:
+======================================
+they are giving decoding message (500 lines)
+
+putty - server - i need to raise - 48 - 72hrs - 
+
+EBS Snapshot:  -1
+==============
+AMI - Amazon Machine Image   - 2
+
+with our permission
+
+  recreation - doccker-compose- production-Backup -3
+   1. launch new ec2 - docker-compose- production
+   2. docker-compose-yml - ready
+   3. docker ps -a (working & existed status)
+server - proroction - 4
+Security - 5
+
+
+Deletion:
+=============
+s3 - bucket
+AMI
+Snapshot
+instances
+
+IAM - Roles - 2
+
+
+
+
+
+my manger same should create on London Region:
+=========================================
+N.varginia to london
+
+snap shot form one region to another region:
+=========================================
+sanpshot - need to convert to volumes - the 
+
+
+s3 
+====
+Simple storage service - Global level
+
+S3 Bucket - region
+
+Global Service in AWS:
+==================
+1. s3
+2. IAM
+3. Route53
+
+S3 Bucket
+===================
+we can create object storage
+
+db that we can update s3 - console- UI - 0-5TB
+CLI - 0-5GB
+
+Versioning:
+=====================
+Backup
+delete as a marker
+
+
+VPC.txt:
+===========
+100 lines - delete this file - versioning not enables - no backup
+enable the version - delte as marker - versioning - delte marker -
+
+File deletion:
+=================
+1. object is already enable - disable
+2. file - delete the - permanent delete
+3. delete marker - permanently delete 
+
+vpc .txt - ENABLE version - disable - then delete
+
+AWS CLI
+
+Terraform
+
+Corss Region Replication:
+=========================
+Cross Replica Rule
+
+s3.txt - production data
+
+Out loo
+
+
+Region:
+===============
+region is about country
+
+availability zones:
+=========================
+states
+
+region:
+=========
+az - 2-6
+   hyd state - karimnagar(data center)
+
+when you stop & start the EC2-Instance:
+=============================
+public ip :   54.172.114.212
+              54.197.76.1
+              44.218.66.145
+              44.218.66.145
+          
+private IP:  172.31.90.215
+
+
+EIP:
+=========
+Elastic IP Address als called permananet IP
+
+ASSIGN - the
+
+
+IAM:
+==============
+Identity and Access Management
+users
+groups
+roles
+policies
+
+IAM Users:
+=================
+Lavanya
+user credentials 
+i should
+
+lavanya
+Abc@112233
+
+Abc@2211
+
+https://044984204764.signin.aws.amazon.com/console
+
+ec2 -instance
+
+s3 
+vpc
+
+what is the diffrence between Root user & IAM user:
+=============================================
+
+044984204764
+
+jimmy
+jimmy@123
+
+S3 Access
+
+https://044984204764.signin.aws.amazon.com/console
+
+20 users
+
+10 user - dev
+
+10 user - admin
+
+AWS CLI:
+=============
+1. aws cli
+
+AWS Configure
+
+2. access-key
+2. secret key
+3. region
+
+
+
+044984204764
+
+aws iam create-user --user-name john
+
+arn:aws:iam::044984204764:user/john
+arn:aws:iam::044984204764:user/john
+
+
+aws iam create-role --role-name admin 
+
+
+aws iam create-role --role-name Test-Role --assume-role-policy-document file://Test-Role-Trust-Policy.json
+
+aws iam create-group --group-name admin
+
+
+aws iam add-user-to-group --user-name john --group-name admin
+
+aws s3api create-bucket --bucket testaug3 --region us-east-1
+
+aws s3api cp --bucket testaug3 C:\Users\pvenu\test.txt
+
+what is the capacity of the size to upload s3 bucket in console and CLI
+======================================================================
+Console - 5TB
+CLI - 5GB
+
+Networking Tool:
+====================
+VPC
+
+Networking Tool:
+=============
+VPC
+
+Virtual Private Cloud
+
+region - defualt VPC
+
+N.varginia - us-east-1 (6 az)
+
+VPC - Region
+Subnet - az
+
+VPC IP address
+
+10.0.0.0/32 --> subnet mask
+10.0.1.0/32
+10.0.0.2/32
+
+
+
+255.255.255.255/32
+
+10.0.0.0/24 (256 ec2-instances)
+
+32 -24 = 8 (2 to the power 8) = 256 Servers
+
+10.0.0.0/16
+
+32-16 =16 ( 2 to the power of 16) = 65536
+
+vpc - 10.0.0.0/16
+
+subnet - 10.0.0.0/24 - public subnet
+        10.0.1.0/24 - private subnets
+public subnet can connect - web server(icicibank.com)- Internet gateway  - webservers
+private subnet- account ( login credentails) - NAT Gatway(NAT - Network Address Transmission) - db
+
+NAT can connect to the interanet gateway
+
+
+Data Base:
+==============
+RDS
+Relational Database Services
+
+Diff Types
+1.mysql
+2.nosql
+3.mssql
+4.mongoDB
+5.DynamoDB
+6. Postgress
+7.MariaDB
+
+Automation Replicas
+Multi AZ
+
+Cluster
+==========
+Multi instances we are creating the single cluster
+
+K8S is stable
+RDS
+
+Dockerfile
+====================
+one micro-service to another micros-services
+
+CMD
+ENV
+Lic
+
+Jenkins end:
+================
+4 micros-service
+
+
+New relic - Monitoring tool
+generated in ec2 instance
+db down
+vpc 
+
+RDS:
+===========
+DELETION
+
+
+AWS Backup
+=================
+1. aws s3
+2. RDS
+3. ec2 - ebs snapshot
+
+
+s3 Bucket life cycle storage class
+=================================
+30 days - standard IA 
+60 days
+90 days
+180 days
+
+AWS Services:
+===========
+1. EC2
+2. LB, ASG
+2. VPC
+3. CW
+4. SNS
+5. EBS
+6. aws Code commit
+7. IAM
+8. AMI
+9. S3
+10. EIP
+11. RDS
+
+Kubernetes:
+=================
+Google Cloud Platform
+
+GCP
+
+GCP Account - 91 days
+gmail account
+
+PAN CARD
+Your photo
+credit card
+
+K8S Architecture
+======================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
