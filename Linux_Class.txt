@@ -1,5 +1,6 @@
 AWS Account
 ===========
+# learning VS Code
 1.free account - 750hrs - 1 yrs
 Debit/credit - 2/-rs
 AWS
