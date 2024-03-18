@@ -5,14 +5,14 @@ metadata:
   labels: webserver
 spec:
   replicaset: 3
-   selector:         # 2 types of selectores --> 1. Equality Based selector   --> 2. Set-based selector
-  matchLabels:
-   type: webserver
- template:
-  metadata:
-   name: mypod
-   labels:
+  selector:         # 2 types of selectores --> 1. Equality Based selector   --> 2. Set-based selector
+   matchLabels:
     type: webserver
+  template:
+   metadata:
+    name: mypod
+    labels:
+     type: webserver
   spec:
    containers:
     - name: myn1
